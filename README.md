@@ -32,7 +32,7 @@ Use InheritJS!
 $('.inherit').each(function(){
 	$(this).inheritJS({
 		element: '.top-bar',
-		inheritAll: false, /* If true, works like SASS '@extend'
+		inheritAll: false, /* If true, works like SASS '@extend' */
 		inherit: {
 			color: 'backgroundColor', /* Property that you want to set followed by the one you want to copy */
 			borderColor: 'backgroundColor'
