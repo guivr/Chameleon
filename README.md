@@ -1,4 +1,4 @@
-# InheritJS Plugin 0.1
+# InheritJS Plugin 0.2
 Use this plugin when you need to inherit propertie(s) of another class in CSS by running JS.
 
 ---
@@ -7,7 +7,7 @@ Use this plugin when you need to inherit propertie(s) of another class in CSS by
 ### HTML
 ```html
 <div class="top-bar red">
-<div class="box inherit" data-parent=".top-bar" data-inherit="background" data-applyto="borderColor,color">
+<div class="box inherit">
 ```
 
 ### CSS
@@ -19,6 +19,7 @@ Use this plugin when you need to inherit propertie(s) of another class in CSS by
 	background: red;
 }
 .box {
+	border-left: 5px solid #fff;
 	/* Changes Background, Border and Color according to the color of the topbar */
 }
 ```
@@ -29,43 +30,13 @@ Use InheritJS!
 ### jQuery
 ```js
 $('.inherit').each(function(){
-	$(this).inheritJS();
-});
-```
-
----
-## Advanced Usage Example
-
-![](http://i.imgur.com/EfzigV4.png)
-```html
-<div class="top-bar red"></div>
-<ul class="inherit">
-  <!-- SELECTED LI NEED TO HAVE THE SAME COLOR (NOT BACKGROUND-COLOR) AND BORDER-COLOR OF TOPBAR !-->
-  <li class="is-selected">Hello World</li>
-</ul>
-```
-```css
-.top-bar .red {
-	// Can't use '.red' class in the li because we just want to change the 'color' property, not 'background'
-	background: red;
-}
-```
-
-Without using this plugin, you would have to create classes like '.red-text' and repeat a lot of html by applying the same things on top-bar as well as ul. InheritJS is here to help you now :)
-
-
-
-![](http://i.imgur.com/AoPN1D4.png)
-```html
-<div class="top-bar red"></div>
-<ul class="inherit" data-parent=".top-bar" data-inherit="background" data-applyto="borderColor,color">
-  <!-- SELECTED LI NEED TO HAVE THE SAME COLOR (NOT BACKGROUND-COLOR) AND BORDER-COLOR OF TOPBAR !-->
-  <li class="is-selected">Hello World</li>
-</ul>
-```
-```js
-$('.inherit').each(function(){
-    var inheritClassData = $(this).data();
-    $(this).children('li.is-selected').inheritJS(inheritClassData);
+	$(this).inheritJS({
+		element: '.top-bar',
+		inheritAll: false, /* If true, works like SASS '@extend'
+		inherit: {
+			color: 'backgroundColor', /* Property that you want to set followed by the one you want to copy */
+			borderColor: 'backgroundColor'
+		}
+	});
 });
 ```
