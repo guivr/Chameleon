@@ -1,6 +1,7 @@
 # InheritJS Plugin 0.1
-Use this plugin when you need to inherit propertie(s) of another class on CSS by running JS.
+Use this plugin when you need to inherit propertie(s) of another class in CSS by running JS.
 
+---
 ## Example Usage
 
 ### HTML
@@ -32,7 +33,10 @@ $('.inherit').each(function(){
 });
 ```
 
+---
 ## Advanced Usage Example
+
+![](http://i.imgur.com/EfzigV4.png)
 ```html
 <div class="top-bar red"></div>
 <ul class="inherit">
@@ -46,11 +50,12 @@ $('.inherit').each(function(){
 	background: red;
 }
 ```
-![](http://i.imgur.com/EfzigV4.png)
+
 Without using this plugin, you would have to create classes like '.red-text' and repeat a lot of html by applying the same things on top-bar as well as ul. InheritJS is here to help you now :)
 
 
 
+![](http://i.imgur.com/AoPN1D4.png)
 ```html
 <div class="top-bar red"></div>
 <ul class="inherit" data-parent=".top-bar" data-inherit="background" data-applyto="borderColor,color">
@@ -64,4 +69,3 @@ $('.inherit').each(function(){
     $(this).children('li.is-selected').inheritJS(inheritClassData);
 });
 ```
-![](http://i.imgur.com/AoPN1D4.png)
