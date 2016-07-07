@@ -1,4 +1,4 @@
-# InheritJS Plugin 0.2
+# ChameleonElement Plugin 0.2
 Use this plugin when you need to inherit propertie(s) of another class in CSS by running JS.
 
 ---
@@ -30,7 +30,7 @@ Use InheritJS!
 ### jQuery
 ```js
 $('.inherit').each(function(){
-	$(this).inheritJS({
+	$(this).chameleonElement({
 		element: '.top-bar',
 		inheritAll: false, /* If true, works like SASS '@extend' */
 		inherit: {
