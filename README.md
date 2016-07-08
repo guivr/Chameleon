@@ -1,4 +1,4 @@
-# ChameleonClass Plugin 0.3
+# ChameleonElement jQuery Plugin 0.3
 Build fluid interfaces for apps that need to inherit CSS properties of another class.
 
 This plugin use another plugin called attrchange
