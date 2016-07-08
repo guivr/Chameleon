@@ -1,40 +1,51 @@
-# ChameleonElement Plugin 0.2
-Use this plugin when you need to inherit propertie(s) of another class in CSS by running JS.
+# ChameleonClass Plugin 0.3
+Build fluid interfaces for apps that need to inherit CSS properties of another class.
+
+![](http://i.imgur.com/8FoyRmq.gif)
 
 ---
-## Example Usage
+## Why Chameleon?
+Even when you don't need to use the real time feature of Chameleon, it prevents you to repeat a lot of code and save a lot of classes (for each background color, border color etc).
 
-### HTML
+### Without Chameleon:
 ```html
-<div class="top-bar red">
-<div class="box inherit">
+<div class="top-bar red-bg white-text">Topbar</div>
+<ul>
+	<li class="is-selected red-text">Option</li>
+</ul>
 ```
 
-### CSS
-```css
-.top-bar {
-	/* WHATEVER */
-}
-.red {
-	background: red;
-}
-.box {
-	border-left: 5px solid #fff;
-	/* Changes Background, Border and Color according to the color of the topbar */
-}
+And in other pages, you would have to repeat the process...
+
+```html
+<div class="top-bar blue-bg white-text">Topbar</div>
+<ul>
+	<li class="is-selected blue-text">Option</li>
+</ul>
 ```
 
-What if your topbar changes the color in different pages and you need to change some properties of the box too without creating classes like 'top-bar--red box--red text-red etc...'?
-Use InheritJS!
+A lot of different classes, a lot of work, right? Automate this using ChameleonClass.
 
+---
+
+### With Chameleon (any kind of property):
+```html
+<div class="top-bar red-bg white-text">Topbar</div>
+<ul class="chameleon">
+	<li class="is-selected"> Option </li>
+</ul>
+```
+
+## How to use
 ### jQuery
 ```js
-$('.inherit').each(function(){
+$('.chameleon').each(function(){
 	$(this).chameleonElement({
-		element: '.top-bar',
-		inheritAll: false, /* If true, works like SASS '@extend' */
+		element: '.top-bar', /* Element that you want to copy some properties */
+		inheritAll: false, /* If true, will inherit everything */
 		inherit: {
-			color: 'backgroundColor', /* Property that you want to set followed by the one you want to copy */
+			/* Property that you want to set followed by the one you want to copy */
+			color: 'backgroundColor',
 			borderColor: 'backgroundColor'
 		}
 	});
