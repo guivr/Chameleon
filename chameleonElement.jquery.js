@@ -1,5 +1,5 @@
 /* ChameleonElement: */
-$(document).ready(function() {
+(function($) {
   $.fn.chameleonElement = function (data) {
     var element = $(this);
     var parent = data.element;
@@ -34,7 +34,7 @@ $(document).ready(function() {
       }
     });
   };
-});
+})(jQuery);
 
 
 /* Stack Overflow:
