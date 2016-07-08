@@ -15,20 +15,15 @@ For example, imagine a side-nav that needs to change its 'color' and 'border-col
 ```html
 <div class="top-bar red-bg white-text">Topbar</div>
 <ul>
-	<li class="is-selected red-text">Option</li>
+	<li class="is-selected red-text red-border">Option</li>
 </ul>
 ```
 
+What if your top-bar changes its background-color each page? You would have to create a lot of classes.
+What if your top-bar changes its background-color in page? You would have to create a kinda messy JS.
 And in other pages, you would have to repeat the process...
 
-```html
-<div class="top-bar blue-bg white-text">Topbar</div>
-<ul>
-	<li class="is-selected blue-text">Option</li>
-</ul>
-```
-
-A lot of different classes, a lot of work, right? Automate this using ChameleonClass.
+Automate this using ChameleonClass.
 
 ---
 
