@@ -38,15 +38,13 @@ Automate this using ChameleonElement.
 ## How to use
 ### jQuery
 ```js
-$('.chameleon').each(function(){
-	$(this).chameleonElement({
-		element: '.top-bar', /* Element that you want to copy some properties */
-		inheritAll: false, /* If true, will inherit everything */
-		inherit: {
-			/* Property that you want to set followed by the one you want to copy */
-			color: 'backgroundColor',
-			borderColor: 'backgroundColor'
-		}
-	});
+$('.chameleon').chameleonElement({
+	element: '.top-bar', /* Element that you want to copy some properties */
+	inheritAll: false, /* If true, will inherit everything */
+	inherit: {
+		/* Property that you want to set followed by the one you want to copy */
+		color: 'backgroundColor',
+		borderColor: 'backgroundColor'
+	}
 });
 ```
