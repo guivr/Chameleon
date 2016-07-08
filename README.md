@@ -1,6 +1,8 @@
 # ChameleonClass Plugin 0.3
 Build fluid interfaces for apps that need to inherit CSS properties of another class.
 
+This plugin use another plugin called attrchange
+
 ![](http://i.imgur.com/8FoyRmq.gif)
 
 ---
