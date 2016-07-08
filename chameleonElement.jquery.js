@@ -1,3 +1,42 @@
+/* ChameleonElement: */
+$(document).ready(function() {
+  $.fn.chameleonElement = function (data) {
+    var element = $(this);
+    var parent = data.element;
+    var result = {};
+    var parentStyle = css($(parent));
+
+    if(!$(this).hasClass('chameleon-listener')){
+      $(parent).attrchange({
+        callback: function(){
+          setTimeout(function(){
+            element.chameleonElement({
+              element: parent,
+              inheritAll: false,
+              inherit: data.inherit
+            });
+          }, 200);
+        }
+      });
+      
+      $(this).addClass('chameleon-listener');
+    }
+
+
+    return this.each(function(){
+      if (data.inheritAll === true) {
+        $(this).css(parentStyle);
+      } else {
+        for (prop in data.inherit) {
+          result[prop] = $(parent).css(data.inherit[prop]);
+        }
+        $(this).css(result);
+      }
+    });
+  };
+});
+
+
 /* Stack Overflow:
 *    http://stackoverflow.com/questions/754607/can-jquery-get-all-css-styles-associated-with-an-element
 *
@@ -161,40 +200,3 @@ https://github.com/meetselva/attrchange/blob/master/MIT-License.txt
 })(jQuery);
 
 
-/* ChameleonElement: */
-$(document).ready(function() {
-  $.fn.chameleonElement = function (data) {
-    var element = $(this);
-    var parent = data.element;
-    var result = {};
-    var parentStyle = css($(parent));
-
-    if(!$(this).hasClass('chameleon-listener')){
-      $(parent).attrchange({
-        callback: function(){
-          setTimeout(function(){
-            element.chameleonElement({
-              element: parent,
-              inheritAll: false,
-              inherit: data.inherit
-            });
-          }, 200);
-        }
-      });
-      
-      $(this).addClass('chameleon-listener');
-    }
-
-
-    return this.each(function(){
-      if (data.inheritAll === true) {
-        $(this).css(parentStyle);
-      } else {
-        for (prop in data.inherit) {
-          result[prop] = $(parent).css(data.inherit[prop]);
-        }
-        $(this).css(result);
-      }
-    });
-  };
-});
