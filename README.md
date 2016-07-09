@@ -22,12 +22,6 @@ Even when you don't need to use the real time feature of Chameleon, it prevents 
 
 For example, imagine a side-nav that needs to change its 'color' and 'border-color' according to the '.top-bar' background-color. You can't use a single class '.red' to these elements because side-nav can't have a red background. So, basically, you would have to create classes like '.red-bg', '.red-text', '.red-border' for each color of your UI and in each page which changes the classes of these elements. With Chameleon, this is much easier and it's realtime (perfect for SPA)!
 
-What if your top-bar changes its background-color each page? You would have to create a lot of classes.
-What if your top-bar changes its background-color in page? You would have to create a kinda messy JS.
-And in other pages, you would have to repeat the process...
-
-Automate this using Chameleon.
-
 ## How to use
 ### jQuery
 ```js
