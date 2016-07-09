@@ -3,14 +3,12 @@
   <img src="http://i.imgur.com/s9mvGDd.png">
 </p>
 <h1 align="center"> Chameleon</h1>
-<p align="center">Use Chameleon in elements which need changing in its style by inheriting CSS properties from others.</p>
+<p align="center">Make use of Chameleon for elements which need to change their style inheriting properties of other elements trough jQuery.</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg">
-  <img src="https://img.shields.io/github/stars/guivr/chameleon.svg">
-  <img src="https://github.com/guivr/chameleon/stargazers">
-  <img src="https://img.shields.io/github/issues/guivr/chameleon.svg">
-  <img src="https://github.com/guivr/chameleon/issues">
+  <a href="https://github.com/guivr/chameleon/stargazers"><img src="https://img.shields.io/github/stars/guivr/chameleon.svg"></a>
+  <a href="https://github.com/guivr/chameleon/issues"><img src="https://img.shields.io/github/issues/guivr/chameleon.svg"></a>
   <img src="https://img.shields.io/badge/version-0.4-green.svg">
   <a href="http://codepen.io/guivr/pen/Vjrmzr"><img src="https://img.shields.io/badge/demo-online-green.svg"></a>
   <br><br><br><br>
@@ -36,7 +34,7 @@ Automate this using Chameleon.
 $('.chameleon').chameleon({
 	mirror: '.top-bar', /* Element that you want to copy some properties */
 	inheritAll: false, /* Default: false. If true, will inherit everything */
-    colorContrast: true /* Default: true. If false, does not look for a rgb contrast comparing color and backgroundColor */
+  colorContrast: true /* Default: true. If false, does not look for a rgb contrast comparing color and backgroundColor */
 	set: {
 		/* Property that you want to set followed by the one you want to copy */
 		color: 'backgroundColor',
