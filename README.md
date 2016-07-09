@@ -1,50 +1,44 @@
-# ChameleonElement jQuery Plugin 0.3
-Build fluid interfaces for apps with elements which inherit CSS properties from another.
 
-** Alert: This plugin uses another plugin called [attrchange](https://github.com/meetselva/attrchange) created by meetselva **
+<center>
+![](https://d13yacurqjgara.cloudfront.net/users/356633/screenshots/2133144/chameleon_teaser.jpg)
+# Chameleon
+**Build fluid interfaces with elements which need to change it styles by inheriting CSS properties from anothers.**
 
-![](http://i.imgur.com/8FoyRmq.gif)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![GitHub Stars](https://img.shields.io/github/stars/guivr/chameleon.svg)](https://github.com/guivr/chameleon/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/guivr/chameleon.svg)](https://github.com/guivr/chameleon/issues) [![Current Version](https://img.shields.io/badge/version-0.4-green.svg)](https://github.com/guivr/chameleon) [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](http://codepen.io/guivr/pen/Vjrmzr)
+<br><br><br><br>
+![](http://i.imgur.com/vsAxG2X.gif)
+
+</center>
 
 ---
-## Why ChameleonElement?
-Even when you don't need to use the real time feature of ChameleonElement, it prevents you to repeat a lot of code and save a lot of classes (for each background color, border color etc).
 
-For example, imagine a side-nav that needs to change its 'color' and 'border-color' according to the '.top-bar' background-color. You can't use a single class '.red' to these elements because side-nav can't have a red background. So, basically, you would have to create classes like '.red-bg', '.red-text', '.red-border' for each color of your UI and in each page which changes the classes of these elements. With ChameleonElement, this is much easier and it's realtime (perfect for SPA)!
+## Why Chameleon?
+Even when you don't need to use the real time feature of Chameleon, it prevents you to repeat a lot of code and save a lot of classes (for each background color, border color etc).
 
-### Without ChameleonElement:
-```html
-<div class="top-bar red-bg white-text">Topbar</div>
-<ul>
-	<li class="is-selected red-text red-border">Option</li>
-</ul>
-```
+For example, imagine a side-nav that needs to change its 'color' and 'border-color' according to the '.top-bar' background-color. You can't use a single class '.red' to these elements because side-nav can't have a red background. So, basically, you would have to create classes like '.red-bg', '.red-text', '.red-border' for each color of your UI and in each page which changes the classes of these elements. With Chameleon, this is much easier and it's realtime (perfect for SPA)!
 
 What if your top-bar changes its background-color each page? You would have to create a lot of classes.
 What if your top-bar changes its background-color in page? You would have to create a kinda messy JS.
 And in other pages, you would have to repeat the process...
 
-Automate this using ChameleonElement.
-
----
-
-### With ChameleonElement (any kind of property):
-```html
-<div class="top-bar red-bg white-text">Topbar</div>
-<ul class="chameleon">
-	<li class="is-selected"> Option </li>
-</ul>
-```
+Automate this using Chameleon.
 
 ## How to use
 ### jQuery
 ```js
-$('.chameleon').chameleonElement({
-	element: '.top-bar', /* Element that you want to copy some properties */
-	inheritAll: false, /* If true, will inherit everything */
-	inherit: {
+$('.chameleon').chameleon({
+	mirror: '.top-bar', /* Element that you want to copy some properties */
+	inheritAll: false, /* Default: false. If true, will inherit everything */
+    colorContrast: true /* Default: true. If false, does not look for a rgb contrast comparing color and backgroundColor */
+	set: {
 		/* Property that you want to set followed by the one you want to copy */
 		color: 'backgroundColor',
 		borderColor: 'backgroundColor'
 	}
 });
 ```
+
+
+
+Alert: This plugin uses another plugin called [attrchange](https://github.com/meetselva/attrchange) created by meetselva
