@@ -20,14 +20,12 @@
     if(!$(this).hasClass('chameleon-listener')){
       $(mirror).attrchange({
         callback: function(){
-          setTimeout(function(){
-            element.chameleon({
-              mirror: mirror,
-              inheritAll: data.inheritAll,
-              colorContrast: data.colorContrast,
-              set: data.set
-            });
-          }, 150);
+          element.chameleon({
+            mirror: mirror,
+            inheritAll: data.inheritAll,
+            colorContrast: data.colorContrast,
+            set: data.set
+          });
         }
       });
       
