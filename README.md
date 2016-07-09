@@ -1,15 +1,15 @@
 
-<center>
-![](https://d13yacurqjgara.cloudfront.net/users/356633/screenshots/2133144/chameleon_teaser.jpg)
+<p align="center">
+![](http://i.imgur.com/s9mvGDd.png)
 # Chameleon
-**Build fluid interfaces with elements which need to change it styles by inheriting CSS properties from anothers.**
+**Use Chameleon in elements which need changing in its style by inheriting CSS properties from others.**
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 [![GitHub Stars](https://img.shields.io/github/stars/guivr/chameleon.svg)](https://github.com/guivr/chameleon/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/guivr/chameleon.svg)](https://github.com/guivr/chameleon/issues) [![Current Version](https://img.shields.io/badge/version-0.4-green.svg)](https://github.com/guivr/chameleon) [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](http://codepen.io/guivr/pen/Vjrmzr)
 <br><br><br><br>
 ![](http://i.imgur.com/vsAxG2X.gif)
 
-</center>
+</p>
 
 ---
 
