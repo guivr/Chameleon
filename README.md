@@ -3,7 +3,7 @@
   <img src="http://i.imgur.com/s9mvGDd.png">
 </p>
 <h1 align="center"> Chameleon</h1>
-<p align="center">Make use of Chameleon for elements which need to change their style inheriting properties of other elements trough jQuery.</p>
+<p align="center">Make use of Chameleon for elements which need to change their style inheriting properties of other elements through jQuery.</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg">
