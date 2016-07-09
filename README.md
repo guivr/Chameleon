@@ -28,7 +28,7 @@ For example, imagine a side-nav that needs to change its 'color' and 'border-col
 $('.chameleon').chameleon({
 	mirror: '.top-bar', /* Element that you want to copy some properties */
 	inheritAll: false, /* Default: false. If true, will inherit everything */
-  colorContrast: true /* Default: true. If false, does not look for a rgb contrast comparing color and backgroundColor */
+ 	colorContrast: true /* Default: true. If false, does not look for a rgb contrast comparing color and backgroundColor */
 	set: {
 		/* Property that you want to set followed by the one you want to copy */
 		color: 'backgroundColor',
