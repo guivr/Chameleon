@@ -1,14 +1,20 @@
 
 <p align="center">
-![](http://i.imgur.com/s9mvGDd.png)
-# Chameleon
-**Use Chameleon in elements which need changing in its style by inheriting CSS properties from others.**
+  <img src="http://i.imgur.com/s9mvGDd.png">
+</p>
+<h1 align="center"> Chameleon</h1>
+<p align="center">Use Chameleon in elements which need changing in its style by inheriting CSS properties from others.</p>
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-[![GitHub Stars](https://img.shields.io/github/stars/guivr/chameleon.svg)](https://github.com/guivr/chameleon/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/guivr/chameleon.svg)](https://github.com/guivr/chameleon/issues) [![Current Version](https://img.shields.io/badge/version-0.4-green.svg)](https://github.com/guivr/chameleon) [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](http://codepen.io/guivr/pen/Vjrmzr)
-<br><br><br><br>
-![](http://i.imgur.com/vsAxG2X.gif)
-
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg">
+  <img src="https://img.shields.io/github/stars/guivr/chameleon.svg">
+  <img src="https://github.com/guivr/chameleon/stargazers">
+  <img src="https://img.shields.io/github/issues/guivr/chameleon.svg">
+  <img src="https://github.com/guivr/chameleon/issues">
+  <img src="https://img.shields.io/badge/version-0.4-green.svg">
+  <a href="http://codepen.io/guivr/pen/Vjrmzr"><img src="https://img.shields.io/badge/demo-online-green.svg"></a>
+  <br><br><br><br>
+  <img src="http://i.imgur.com/vsAxG2X.gif">
 </p>
 
 ---
