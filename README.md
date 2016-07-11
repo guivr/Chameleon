@@ -1,7 +1,4 @@
 
-<p align="center">
-  <img src="http://i.imgur.com/s9mvGDd.png">
-</p>
 <h1 align="center"> Chameleon</h1>
 <p align="center">Use Chameleon on elements that need to change their style inheriting properties of other elements through jQuery.</p>
 
