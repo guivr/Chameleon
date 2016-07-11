@@ -35,7 +35,8 @@ $('.chameleon').chameleon({
 ```
 
 ### License
-> You can check out the full license here
+> You can check out the full license [here](https://github.com/guivr/Chameleon/blob/master/LICENSE)
+
 This project is licensed under the terms of the MIT license.
 
 ### Disclaimer
