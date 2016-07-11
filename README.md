@@ -3,7 +3,7 @@
   <img src="http://i.imgur.com/s9mvGDd.png">
 </p>
 <h1 align="center"> Chameleon</h1>
-<p align="center">Make use of Chameleon for elements which need to change their style inheriting properties of other elements through jQuery.</p>
+<p align="center">Use Chameleon on elements that need to change their style inheriting properties of other elements through jQuery.</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg">
@@ -18,17 +18,17 @@
 ---
 
 ## Why Chameleon?
-Even when you don't need to use the real time feature of Chameleon, it prevents you to repeat a lot of code and save a lot of classes (for each background color, border color etc).
+Even when not using the real-time feature of Chameleon, it will save you lots of code and classes (e.g. each background color, border color..)
 
-For example, imagine a side-nav that needs to change its 'color' and 'border-color' according to the '.top-bar' background-color. You can't use a single class '.red' to these elements because side-nav can't have a red background. So, basically, you would have to create classes like '.red-bg', '.red-text', '.red-border' for each color of your UI and in each page which changes the classes of these elements. With Chameleon, this is much easier and it's realtime (perfect for SPA)!
+Imagine you have a sidenav that needs to change its `color` and `border-color` according to the `.top-bar`'s `background-color`. You can't simply use a single `.red` class on these elements because your sidenav can't have a red background. So then you would have to create classes such as `.red-bg`, `.red-text`, `.red-border` and so on for each color of your UI. With Chameleon, this is real-time and much easier, perfect for SPAs.
 
-## How to use
+## How to Use
 ### jQuery
 ```js
 $('.chameleon').chameleon({
-	mirror: '.top-bar', /* Element that you want to copy some properties */
+	mirror: '.top-bar', /* Element from where you want to copy some properties */
 	inheritAll: false, /* Default: false. If true, will inherit everything */
- 	colorContrast: true, /* Default: true. If false, does not look for a rgb contrast comparing color and backgroundColor */
+ 	colorContrast: true, /* Default: true. If false, will not adapt text for readability */
 	set: {
 		/* Property that you want to set followed by the one you want to copy */
 		color: 'backgroundColor',
@@ -37,6 +37,9 @@ $('.chameleon').chameleon({
 });
 ```
 
+### License
+> You can check out the full license here
+This project is licensed under the terms of the MIT license.
 
-
-Alert: This plugin uses another plugin called [attrchange](https://github.com/meetselva/attrchange) created by meetselva
+### Disclaimer
+> This plugin uses [attrchange](https://github.com/meetselva/attrchange), created by @meetselva
