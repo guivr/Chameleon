@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chamaleon</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__title">Chameleon</h1>
+    <a href="http://codepen.io/guivr/pen/Vjrmzr" target="_blank" class="btn btn--round">See more examples</a>
+    <a href="https://github.com/guivr/Chameleon" target="_blank" class="btn btn--round">View on Github</a>
+  </header>
+
+  <article class="page-content">
+    <div class="wrapper">
+      <p class="page-content__text">Use Chameleon on elements that need to change their style inheriting properties of other elements through jQuery.</p>
+
+      <h2 class="page-content__title">Why Chameleon?</h2>
+      <p class="page-content__text">Even when not using the real-time feature of Chameleon, it will save you lots of code and classes (e.g. each background color, border color..)</p>
+
+      <p class="page-content__text">Imagine you have a sidenav that needs to change its <strong>color</strong> and <strong>border-color</strong> according to the <strong>.top-bar</strong>'s <strong>background-color</strong>. You can't simply use a single <strong>.red</strong> class on these elements because your sidenav can't have a red background. So then you would have to create classes such as <strong>.red-bg</strong>, <strong>.red-text</strong>, <strong>.red-border</strong> and so on for each color of your UI. With Chameleon, this is real-time and much easier, perfect for SPAs.</p>
+
+      <h3 class="page-content__title">How to Use ( jQuery )</h3>
+
+      <pre class="language-javascript"><code>
+$('.chameleon').chameleon({
+  mirror: '.top-bar',
+  inheritAll: false,
+  colorContrast: true,
+  set: {
+    color: 'backgroundColor',
+    borderColor: 'backgroundColor'
+  }
+});
+      </code></pre>
+
+      <h4 class="page-content__subtitle">Disclaimer</h4>
+      <p class="page-content__text">This plugin uses <a href="https://github.com/meetselva/attrchange" class="page-content__link" target="_blank">attrchange</a> created by @meetselva</p>
+    </div>
+  </article>
+
+  <script src="scripts/vendor.min.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+</html>
