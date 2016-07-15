@@ -39,5 +39,8 @@ $('.chameleon').chameleon({
 
 This project is licensed under the terms of the MIT license.
 
+### Contributors
+@jeffersondanielss - Created our super awesome GitHub Page!
+
 ### Disclaimer
 > This plugin uses [attrchange](https://github.com/meetselva/attrchange), created by @meetselva
