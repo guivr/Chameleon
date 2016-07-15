@@ -41,6 +41,7 @@ This project is licensed under the terms of the MIT license.
 
 ### Contributors
 @jeffersondanielss - Created our super awesome GitHub Page!
+
 @igorantun - Improved README english words.
 
 ### Disclaimer
