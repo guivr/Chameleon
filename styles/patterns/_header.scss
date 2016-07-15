@@ -1,0 +1,40 @@
+.header {
+  background-color: #CCC;
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 10% 0 10%;
+
+  &__title {
+    color: #FFF;
+    font-size: 70px;
+    margin-bottom: 50px;
+  }
+}
+
+.btn {
+  padding: 10px 30px;
+  background-color: #444;
+  color: #FFFFFF;
+  margin: 0 10px;
+  position: relative;
+  font-weight: bold;
+
+  &--round {
+    border-radius: 20px;
+  }
+}
+
+@media screen and ( max-width: 1024px ) {
+  .header__title {
+    font-size: 40px;
+  }
+}
+
+@media screen and ( max-width: 480px ) {
+  .btn {
+    display: block;
+    width: 65%;
+    margin: 0 auto 10px;
+    padding: 10px 30px;
+  }
+}
