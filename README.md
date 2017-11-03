@@ -1,6 +1,7 @@
 
 <h1 align="center"> Chameleon</h1>
 <p align="center">Use Chameleon on elements that need to change their style inheriting properties of other elements through jQuery.</p>
+<p align="center">PS: Deprecated. I don't recommend using Chameleon anymore because that are available techniques outside such as nesting that are better for creating themes. You can still use Chameleon to real-time purposes, but I recommend something without jQuery.</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg">
